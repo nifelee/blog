@@ -72,6 +72,10 @@ class PersonRepositoryIntegrationTest {
 > Caused by: org.springframework.core.convert.ConverterNotFoundException:
 >   No converter found capable of converting from type [java.nio.HeapByteBuffer] to type [java.util.UUID]
 
+- H2 DB 메모리 프로토콜만 지원
+> protocol option tcp is unsupported (file, mem)
+>   at io.r2dbc.h2.H2ConnectionFactoryProvider.create(H2ConnectionFactoryProvider.java:82)
+
 
 ### 결론
 정식 버전이 나왔다고 얼핏 들어서 살짝 검토해보니 아직 마일스톤 버전이라 그런지 실무에서 사용하기에는 좀 더 기다려봐야겠다.
