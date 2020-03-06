@@ -1,0 +1,14 @@
+spring:
+  task:
+    execution:
+      pool:
+        core-size: 1
+        max-size: 100
+        queue-capacity: 5
+
+logging:
+  pattern:
+    console: "[%d{HH:mm:ss}] [%thread] %clr([%-5level]) %class{0}.%M%clr(\\(%L\\)){magenta}| %msg%n"
+  level:
+    com.nifelee: debug
+    reactor.netty: error
