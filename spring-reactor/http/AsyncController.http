@@ -1,0 +1,13 @@
+### /sync
+GET localhost:8080/sync
+
+### /callable - 응답이 제대로 안 옴
+GET localhost:8080/callable
+
+### /dr - {"result":null,"setOrExpired":false}
+GET localhost:8080/dr
+
+### /mono
+GET localhost:8080/mono?index=1
+
+###
